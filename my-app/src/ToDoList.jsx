@@ -1,6 +1,4 @@
-import { useState } from "react";
-
-import React from 'react'
+import React,{ useState } from "react";
 
 const ToDoList = () => {
 
@@ -15,7 +13,7 @@ const ToDoList = () => {
   function addTask(){
 
     if(newTasks.trim() !== ""){
-      setTasks(t=>[...tasks,newTasks]);
+      setTasks(()=>[...tasks,newTasks]);
       setNewTasks("");
     }
   }
